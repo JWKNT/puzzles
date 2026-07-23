@@ -2,12 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Puzzles by KNT", template: "%s" },
-  description: "A personal archive of original logic puzzles by KNT.",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
+  title: { default: "Puzzles", template: "%s" },
+  description: "An archive of original logic puzzles.",
 };
 
 export default function RootLayout({

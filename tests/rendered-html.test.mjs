@@ -21,10 +21,10 @@ test("server-renders the full puzzle archive", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /<title>Puzzles by KNT<\/title>/i);
+  assert.match(html, /<title>Puzzles<\/title>/i);
   assert.match(html, /126(?:<!-- -->|\s)*puzzles/);
   assert.match(html, /A 38/);
-  assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
+  assert.doesNotMatch(html, /Puzzles by KNT|KNT \/ Puzzles|LMD ID|Difficulty|react-loading-skeleton/);
 });
 
 test("server-renders an individual mirrored puzzle page", async () => {

@@ -22,9 +22,16 @@ test("server-renders the full puzzle archive", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<title>Puzzles<\/title>/i);
-  assert.match(html, /126(?:<!-- -->|\s)*puzzles/);
   assert.match(html, /A 38/);
+  assert.doesNotMatch(html, /126(?:<!-- -->|\s)*puzzles/);
+  assert.doesNotMatch(html, /id="catalogue-heading">Puzzles/);
   assert.doesNotMatch(html, /Puzzles by KNT|KNT \/ Puzzles|Personal puzzle archive|By KNT|JWKNT|LMD ID|Difficulty|react-loading-skeleton/);
+
+  for (const puzzle of puzzleData.filter((item) => item.assetCount > 1)) {
+    const images = [...puzzle.contentHtml.matchAll(/<img[^>]+src=["']([^"']+)/gi)];
+    assert.ok(html.includes(images.at(-1)[1]), `${puzzle.id} should use its final puzzle image`);
+    assert.ok(!html.includes(images[0][1]), `${puzzle.id} should not use its example image`);
+  }
 });
 
 test("server-renders an individual mirrored puzzle page", async () => {
@@ -52,6 +59,14 @@ test("archive data is complete and every mirrored image exists", async () => {
       assert.match(match[1], /^\/puzzles\//);
       await access(new URL(`../public${match[1]}`, import.meta.url));
     }
+  }
+
+  const multiImagePuzzles = puzzleData.filter((puzzle) => puzzle.assetCount > 1);
+  assert.ok(multiImagePuzzles.length > 0);
+  for (const puzzle of multiImagePuzzles) {
+    const images = [...puzzle.contentHtml.matchAll(/<img[^>]+src=["']([^"']+)/gi)];
+    assert.ok(images.length > 1);
+    assert.notEqual(images[0][1], images.at(-1)[1]);
   }
 
   await access(new URL("../public/puzzles", import.meta.url));

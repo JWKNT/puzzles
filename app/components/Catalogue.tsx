@@ -41,15 +41,7 @@ export function Catalogue({ puzzles }: { puzzles: PuzzleSummary[] }) {
   };
 
   return (
-    <section className="catalogue" aria-labelledby="catalogue-heading">
-      <div className="section-heading">
-        <h1 id="catalogue-heading">Puzzles</h1>
-        <div className="section-tools">
-          <p className="result-count" aria-live="polite">{filtered.length} {filtered.length === 1 ? "puzzle" : "puzzles"}</p>
-          <ThemeToggle />
-        </div>
-      </div>
-
+    <section className="catalogue" aria-label="Puzzle list">
       <div className="filters" role="search">
         <label className="search-field">
           <span>Search</span>
@@ -71,6 +63,7 @@ export function Catalogue({ puzzles }: { puzzles: PuzzleSummary[] }) {
           </select>
         </label>
         <button className="reset-button" type="button" onClick={clearFilters}>Reset</button>
+        <ThemeToggle />
       </div>
 
       {filtered.length ? (

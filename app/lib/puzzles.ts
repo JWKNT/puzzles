@@ -24,8 +24,9 @@ export type PuzzleSummary = Pick<Puzzle, "id" | "slug" | "title" | "difficulty" 
 
 export const puzzles = puzzleData as Puzzle[];
 
-function firstImage(html: string) {
-  return html.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1] || null;
+function finalPuzzleImage(html: string) {
+  const images = [...html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)];
+  return images.at(-1)?.[1] || null;
 }
 
 export const puzzleSummaries: PuzzleSummary[] = puzzles.map((puzzle) => ({
@@ -38,7 +39,7 @@ export const puzzleSummaries: PuzzleSummary[] = puzzles.map((puzzle) => ({
   rating: puzzle.rating,
   solved: puzzle.solved,
   tags: puzzle.tags,
-  thumbnail: firstImage(puzzle.contentHtml),
+  thumbnail: finalPuzzleImage(puzzle.contentHtml),
 }));
 
 export function getPuzzle(slug: string) {

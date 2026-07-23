@@ -1,2 +1,0 @@
-:HL["/puzzles/_next/static/chunks/0kx_-o.t-krdp.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"slug","param":{"type":"d","key":"japanese-slitherlink-000kh0","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"uSLXqRzgV3_Qv983QVev1"}

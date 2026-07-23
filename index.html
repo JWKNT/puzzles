@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A searchable list of original logic puzzles.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Puzzles</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body class="catalogue-page">
+    <a class="skip-link" href="#puzzle-list">Skip to puzzle list</a>
+    <main class="page-shell">
+      <h1 class="sr-only">Puzzles</h1>
+      <section class="toolbar" aria-label="Search and sorting controls">
+        <label class="search-control" for="puzzle-search">
+          <span>Search</span>
+          <input id="puzzle-search" type="search" autocomplete="off" placeholder="Title or puzzle type">
+          <kbd>⌘K</kbd>
+        </label>
+        <span class="toolbar-separator" aria-hidden="true"></span>
+        <label class="sort-control" for="sort-select">
+          <span>Sort</span>
+          <select id="sort-select">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="title">A–Z</option>
+          </select>
+        </label>
+        <button class="filter-toggle" id="filter-toggle" type="button">Tags <span id="active-filter-count">0</span></button>
+        <button class="text-button toolbar-reset" id="reset-filters" type="button">Reset</button>
+      </section>
+
+      <section class="archive" aria-label="Puzzle archive">
+        <aside class="filters" id="filters" aria-label="Puzzle type filters">
+          <div class="filter-heading">
+            <h2>Tags</h2>
+            <button class="drawer-close" id="drawer-close" type="button" aria-label="Close tags">×</button>
+          </div>
+          <div id="filter-groups"></div>
+        </aside>
+
+        <section class="results" id="puzzle-list" aria-live="polite">
+          <p class="sr-only" id="result-status"></p>
+          <div class="active-chips" id="active-chips" aria-label="Active filters"></div>
+          <div class="puzzle-table-wrap">
+            <table class="puzzle-table">
+              <thead>
+                <tr><th>Puzzle</th><th>Types</th><th>Published</th><th><span class="sr-only">Open</span></th></tr>
+              </thead>
+              <tbody id="puzzle-rows"></tbody>
+            </table>
+          </div>
+          <div class="puzzle-cards" id="puzzle-cards"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <p>No puzzles match those filters.</p>
+            <button type="button" id="empty-reset">Clear filters</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <script src="data/puzzles.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

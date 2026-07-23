@@ -43,13 +43,14 @@ test("server-renders an individual mirrored puzzle page", async () => {
   assert.match(html, /Rules &amp; puzzle/);
   assert.match(html, new RegExp(`/puzzles/${puzzle.id.toLowerCase()}/asset-`));
   assert.match(html, /View original on LMD/);
-  assert.doesNotMatch(html, /Puzzles by KNT|Personal puzzle archive|By KNT|JWKNT|LMD ID|Difficulty/);
+  assert.doesNotMatch(html, /Puzzles by KNT|Personal puzzle archive|By KNT|JWKNT|LMD ID|Difficulty|Solution code|solution-code/);
 });
 
 test("archive data is complete and every mirrored image exists", async () => {
   assert.equal(puzzleData.length, 126);
   assert.equal(new Set(puzzleData.map((puzzle) => puzzle.id)).size, 126);
   assert.equal(new Set(puzzleData.map((puzzle) => puzzle.slug)).size, 126);
+  assert.ok(puzzleData.every((puzzle) => !("solutionCode" in puzzle)));
 
   for (const puzzle of puzzleData) {
     assert.ok(puzzle.title);

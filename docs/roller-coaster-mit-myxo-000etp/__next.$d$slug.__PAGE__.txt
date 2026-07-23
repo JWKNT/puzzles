@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
 3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
-a:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-b:"$Sreact.suspense"
-4:T8b6,<p>
+b:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+4:T8c6,<p>
 
 This is a puzzle for Myxo in celebration of his birthday and his recent marriage. Congratulations, my friend!</p><p>
 </p><hr>
@@ -26,11 +26,11 @@ That should be everything, I hope you enjoy!
 <br>
 
 <div style="clear:both;text-align:center">
-<img src="/puzzles/000etp/asset-01-13597adbca.png" loading="lazy" decoding="async">
+<img src="/puzzles/puzzles/000etp/asset-01-13597adbca.png" loading="lazy" decoding="async">
 </div>
 
 <div style="clear:both;text-align:center">
-<img src="/puzzles/000etp/asset-02-a60cc35623.png" loading="lazy" decoding="async">
+<img src="/puzzles/puzzles/000etp/asset-02-a60cc35623.png" loading="lazy" decoding="async">
 </div>
 <a href="https://tinyurl.com/2c7xm4q3">penpa+</a><a><p>
 </p><hr>
@@ -47,10 +47,11 @@ To clarify, the above definitions only apply to the slitherlink clues: exactly o
 The digits 'inside the loop' in the roller coaster grid are not exactly knapp daneben, you are to subtract 1 from each of those cells when calculating the sums. A similar interaction between grids with an example can be found </a><a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=00029Y">here</a><a>.
 <br>
 <br>
-</a></p><hr>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Roller Coaster mit Myxo"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Roller Coaster mit Myxo"}],["$","p",null,{"className":"puzzle-byline","children":"September 18, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000ETP","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"The numbers 'outside the loop' in the second to last row and the second to last column."}}],"$L5"]}]]}],"$L6"]}],"$L7"]}]],["$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
-5:["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]
-6:["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"September 18, 2023"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Roller Coaster",{"children":"Roller Coaster"}],["$","span","Slitherlink",{"children":"Slitherlink"}]]}]]}]
-7:["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/doppelcrypto-japanese-cave-000fd7","children":[["$","span",null,{"children":"Newer"}],"Doppelcrypto Japanese Cave"]}],["$","$L2",null,{"href":"/loop-with-a-coral-infestation-000evd","children":[["$","span",null,{"children":"Older"}],"Loop with a Coral Infestation"]}]]}]
-8:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
-9:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
-c:null
+</a></p><hr>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Roller Coaster mit Myxo"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Roller Coaster mit Myxo"}],["$","p",null,{"className":"puzzle-byline","children":"September 18, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000ETP","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":["$L5","$L6"]}]}],"$L7"]}]]}],"$L8"]}]],["$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"uSLXqRzgV3_Qv983QVev1"}
+5:["$","dt",null,{"children":"Published"}]
+6:["$","dd",null,{"children":"September 18, 2023"}]
+7:["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Roller Coaster",{"children":"Roller Coaster"}],["$","span","Slitherlink",{"children":"Slitherlink"}]]}]
+8:["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/doppelcrypto-japanese-cave-000fd7","children":[["$","span",null,{"children":"Newer"}],"Doppelcrypto Japanese Cave"]}],["$","$L2",null,{"href":"/loop-with-a-coral-infestation-000evd","children":[["$","span",null,{"children":"Older"}],"Loop with a Coral Infestation"]}]]}]
+9:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
+a:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+d:null

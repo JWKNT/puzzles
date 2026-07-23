@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
 3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
-9:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-a:"$Sreact.suspense"
-4:T6c3,Place the numbers from 1 to 9 exactly once in every row and column, and leave one cell empty in each row and column.
+6:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+4:T6d3,Place the numbers from 1 to 9 exactly once in every row and column, and leave one cell empty in each row and column.
 <br>
 <br>
 Shade some cells such that all unshaded cells are orthogonally connected, and all orthogonally connected groups of shaded cells touch the edge of the grid. The empty cells act as holes in the grid, connectivity is obstructed by these holes.
@@ -20,7 +20,7 @@ The letters A to I replace numbers from 0 to 9, and no two letters may replace t
 <br>
 A <a href="https://tinyurl.com/2adst7q7">1-6 example</a><a> is provided:
 <div style="clear:both;text-align:center">
-<img src="/puzzles/000bpc/asset-01-0826683ab7.png" loading="lazy" decoding="async">
+<img src="/puzzles/puzzles/000bpc/asset-01-0826683ab7.png" loading="lazy" decoding="async">
 </div>
 </a><p><a>
 </a><a href="https://sudokupad.app/wd8606sx3g?setting-conflictchecker=0">SudokuPad</a><a> 
@@ -28,10 +28,7 @@ A <a href="https://tinyurl.com/2adst7q7">1-6 example</a><a> is provided:
 </a><a href="https://tinyurl.com/267sbhjx">penpa+</a><a> 
 
 </a></p><div style="clear:both;text-align:center"><a>
-<img src="/puzzles/000bpc/asset-02-10cf54291d.png" loading="lazy" decoding="async">
-</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Crypto Japanese Cave with Indexers"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Crypto Japanese Cave with Indexers"}],["$","p",null,{"className":"puzzle-byline","children":"October 20, 2022"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000BPC","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 5, then Column 4, with X for empty cells"}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"October 20, 2022"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Japanese Sums",{"children":"Japanese Sums"}],["$","span","Cave",{"children":"Cave"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":["$L5","$L6"]}]]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
-5:["$","$L2",null,{"href":"/crypto-japanese-twilight-cave-000br3","children":[["$","span",null,{"children":"Newer"}],"Crypto Japanese Twilight Cave"]}]
-6:["$","$L2",null,{"href":"/crypto-japanese-cave-2-000bmj","children":[["$","span",null,{"children":"Older"}],"Crypto Japanese Cave (2)"]}]
-7:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
-8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
-b:null
+<img src="/puzzles/puzzles/000bpc/asset-02-10cf54291d.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Crypto Japanese Cave with Indexers"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Crypto Japanese Cave with Indexers"}],["$","p",null,{"className":"puzzle-byline","children":"October 20, 2022"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000BPC","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"October 20, 2022"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Japanese Sums",{"children":"Japanese Sums"}],["$","span","Cave",{"children":"Cave"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/crypto-japanese-twilight-cave-000br3","children":[["$","span",null,{"children":"Newer"}],"Crypto Japanese Twilight Cave"]}],["$","$L2",null,{"href":"/crypto-japanese-cave-2-000bmj","children":[["$","span",null,{"children":"Older"}],"Crypto Japanese Cave (2)"]}]]}]]}]],[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"uSLXqRzgV3_Qv983QVev1"}
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

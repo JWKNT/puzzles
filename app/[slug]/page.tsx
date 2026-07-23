@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "../components/SiteHeader";
-import { formatDate, getPuzzle, puzzles } from "../lib/puzzles";
+import { formatDate, getPuzzle, puzzleContentHtml, puzzles } from "../lib/puzzles";
 
 export const dynamicParams = false;
 
@@ -50,14 +50,7 @@ export default async function PuzzlePage({ params }: { params: Promise<{ slug: s
         <div className="puzzle-layout">
           <article className="puzzle-article">
             <div className="article-label">Rules &amp; puzzle</div>
-            <div className="puzzle-content" dangerouslySetInnerHTML={{ __html: puzzle.contentHtml }} />
-            {puzzle.solutionCode && (
-              <section className="solution-code">
-                <h2>Solution code</h2>
-                <div dangerouslySetInnerHTML={{ __html: puzzle.solutionCode }} />
-                <p className="solution-note">Submit your answer on the original Logic Masters Germany page.</p>
-              </section>
-            )}
+            <div className="puzzle-content" dangerouslySetInnerHTML={{ __html: puzzleContentHtml(puzzle.contentHtml) }} />
           </article>
 
           <aside className="puzzle-meta" aria-label="Puzzle details">

@@ -11,7 +11,6 @@ export type Puzzle = {
   solved: number;
   tags: string[];
   contentHtml: string;
-  solutionCode: string;
   sourceUrl: string;
   assetCount: number;
 };
@@ -23,6 +22,19 @@ export type PuzzleSummary = Pick<Puzzle, "id" | "slug" | "title" | "difficulty" 
 };
 
 export const puzzles = puzzleData as Puzzle[];
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+function withBasePath(path: string) {
+  return basePath && path.startsWith("/") ? `${basePath}${path}` : path;
+}
+
+export function puzzleContentHtml(html: string) {
+  return html.replace(
+    /(<img\b[^>]*\bsrc=["'])(\/[^"']+)(["'])/gi,
+    (_match, before: string, path: string, after: string) => `${before}${withBasePath(path)}${after}`,
+  );
+}
 
 function finalPuzzleImage(html: string) {
   const images = [...html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)];
@@ -39,7 +51,7 @@ export const puzzleSummaries: PuzzleSummary[] = puzzles.map((puzzle) => ({
   rating: puzzle.rating,
   solved: puzzle.solved,
   tags: puzzle.tags,
-  thumbnail: finalPuzzleImage(puzzle.contentHtml),
+  thumbnail: withBasePath(finalPuzzleImage(puzzle.contentHtml) || "") || null,
 }));
 
 export function getPuzzle(slug: string) {

@@ -4,7 +4,7 @@ export function ThemeToggle() {
   function toggleTheme() {
     const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = nextTheme;
-    localStorage.setItem("knt-theme", nextTheme);
+    localStorage.setItem("puzzle-theme", nextTheme);
   }
 
   return (

@@ -24,7 +24,7 @@ test("server-renders the full puzzle archive", async () => {
   assert.match(html, /<title>Puzzles<\/title>/i);
   assert.match(html, /126(?:<!-- -->|\s)*puzzles/);
   assert.match(html, /A 38/);
-  assert.doesNotMatch(html, /Puzzles by KNT|KNT \/ Puzzles|LMD ID|Difficulty|react-loading-skeleton/);
+  assert.doesNotMatch(html, /Puzzles by KNT|KNT \/ Puzzles|Personal puzzle archive|By KNT|JWKNT|LMD ID|Difficulty|react-loading-skeleton/);
 });
 
 test("server-renders an individual mirrored puzzle page", async () => {
@@ -36,6 +36,7 @@ test("server-renders an individual mirrored puzzle page", async () => {
   assert.match(html, /Rules &amp; puzzle/);
   assert.match(html, new RegExp(`/puzzles/${puzzle.id.toLowerCase()}/asset-`));
   assert.match(html, /View original on LMD/);
+  assert.doesNotMatch(html, /Puzzles by KNT|Personal puzzle archive|By KNT|JWKNT|LMD ID|Difficulty/);
 });
 
 test("archive data is complete and every mirrored image exists", async () => {

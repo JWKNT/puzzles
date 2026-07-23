@@ -81,6 +81,7 @@ button, select { cursor: pointer; }
 :root[data-theme="dark"] .theme-icon-dark { display: inline; }
 
 .site-main { padding-block: 54px 90px; }
+.list-page { padding-top: 40px; }
 .eyebrow, .article-label {
   margin: 0 0 12px;
   color: var(--accent);
@@ -93,7 +94,9 @@ button, select { cursor: pointer; }
 .catalogue { padding-top: 8px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
 .section-heading h1 { margin: 0; font-size: clamp(39px, 5vw, 66px); font-weight: 500; letter-spacing: -.025em; }
+.section-tools { display: flex; align-items: center; gap: 18px; }
 .result-count { margin: 0 0 5px; color: var(--muted); font-family: var(--sans); font-size: 13px; }
+.section-tools .result-count { margin: 0; }
 .filters {
   display: grid;
   grid-template-columns: minmax(260px, 1fr) repeat(2, minmax(145px, 180px)) auto;

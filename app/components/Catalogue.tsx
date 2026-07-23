@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { PuzzleSummary } from "../lib/puzzles";
+import { ThemeToggle } from "./ThemeToggle";
 
 type Sort = "newest" | "oldest" | "title";
 
@@ -43,7 +44,10 @@ export function Catalogue({ puzzles }: { puzzles: PuzzleSummary[] }) {
     <section className="catalogue" aria-labelledby="catalogue-heading">
       <div className="section-heading">
         <h1 id="catalogue-heading">Puzzles</h1>
-        <p className="result-count" aria-live="polite">{filtered.length} {filtered.length === 1 ? "puzzle" : "puzzles"}</p>
+        <div className="section-tools">
+          <p className="result-count" aria-live="polite">{filtered.length} {filtered.length === 1 ? "puzzle" : "puzzles"}</p>
+          <ThemeToggle />
+        </div>
       </div>
 
       <div className="filters" role="search">

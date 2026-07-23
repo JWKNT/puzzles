@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Catalogue } from "./components/Catalogue";
-import { SiteHeader } from "./components/SiteHeader";
 import { puzzleSummaries } from "./lib/puzzles";
 
 export const metadata: Metadata = {
@@ -10,11 +9,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <SiteHeader />
-      <main className="site-main">
-        <Catalogue puzzles={puzzleSummaries} />
-      </main>
-    </>
+    <main className="site-main list-page">
+      <Catalogue puzzles={puzzleSummaries} />
+    </main>
   );
 }

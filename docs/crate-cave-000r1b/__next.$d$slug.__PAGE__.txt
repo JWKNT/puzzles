@@ -1,0 +1,33 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+5:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+4:T505,Shade some cells such that all unshaded cells are orthogonally connected, and all orthogonally connected groups of shaded cells touch the edge of the grid. Clued cells cannot be shaded.
+<br>
+<br>
+Additionally, crates may be placed in some unclued, unshaded cells such that no crate shares an edge with either a shaded cell or another crate. Crates block connectivity of unshaded cells.
+<br>
+<br>
+A clued cell has one of two meanings:
+<br>
+<br>
+1) The total count of unshaded cells seen in all four directions, including itself, where shaded cells, crates, and the edge of the grid obstruct vision. 
+<br>
+<br>
+2) The total number of crates in the same row or column as the clue cell. No two orthogonally adjacent clues may both be of this type.
+<br>
+<br>
+An <a href="https://tinyurl.com/224douga">8x8 example</a><a> is provided:
+<div style="clear:both;text-align:center">
+<img src="/puzzles/000r1b/asset-01-ad77a7168f.png" loading="lazy" decoding="async">
+</div>
+</a><p><a>
+</a><a href="https://sudokupad.app/lvhusoxqqx?setting-conflictchecker=0">SudokuPad</a><a> 
+</a></p><p><a>
+</a><a href="https://tinyurl.com/2ac9r4jz">penpa+</a><a>
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000r1b/asset-02-4fa264d864.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Crate Cave"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Crate Cave"}],["$","p",null,{"className":"puzzle-byline","children":"January 16, 2026"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000R1B","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"For each column from left to right, the number of crates in the column."}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"January 16, 2026"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Cave",{"children":"Cave"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/icewalk-sudoku-000r78","children":[["$","span",null,{"children":"Newer"}],"Icewalk Sudoku"]}],["$","$L2",null,{"href":"/candles-reconstruction-000qxj","children":[["$","span",null,{"children":"Older"}],"Candles Reconstruction"]}]]}]]}]],[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+7:null

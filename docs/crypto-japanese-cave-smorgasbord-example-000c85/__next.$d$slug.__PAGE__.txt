@@ -1,0 +1,29 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+9:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+4:T71a,Place numbers from 1 to 6 in some empty cells, and some positive integers in some given clue cells such that all numbers are orthogonally connected and all orthogonally connected groups of empty cells touch the boundary of the grid. No number from 1 to 6 may repeat in a row or column.
+<br>
+<br>
+The letters are split into two distinct ciphers; one that consists of letters only outside the grid (E, L, M, P, and X) and one that consists of letters only inside the grid (B and C). Within a cipher, each letter replaces a unique number between 1 and 6 inclusive. The letter that appears both inside and outside the grid (A) takes on a different value between 1 and 6 in each occurrence.
+<br>
+<br>
+Clues outside the grid indicate the sums of connected groups of numbers in the respective row or column, in order, where empty cells serve as delimeters between groups. A question mark can be any number from 0 to 9, and for all clues, none may have a leading zero.
+<br>
+<br>
+If a cell with a given clue contains a number, the given clue indicates the total amount of numbers seen in all four orthogonal directions, including itself, where empty cells block vision. However, the number placed in that cell must be exactly one greater or exactly one less than the given clue. If a given clue is empty, then it indicates the size of the orthogonally connected block of empty cells that cell belongs to. A block of empty cells may contain multiple given clues as long as the given clues are identical in value.
+<br>
+<br>
+<a href="https://sudokupad.app/mvss9avjm5?setting-conflictchecker=0">SudokuPad</a><a> 
+</a><p><a>
+</a><a href="https://tinyurl.com/23eh274t">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000c85/asset-01-2257c3f3db.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Crypto Japanese Cave: Smörgåsbord (Example)"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Crypto Japanese Cave: Smörgåsbord (Example)"}],["$","p",null,{"className":"puzzle-byline","children":"December 4, 2022"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000C85","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 4, Column 2, S for empty cells"}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"December 4, 2022"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Japanese Sums",{"children":"Japanese Sums"}],"$L5"]}]]}]]}],"$L6"]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+5:["$","span","Cave",{"children":"Cave"}]
+6:["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/crypto-japanese-cave-smorgasbord-for-niverio-000ca0","children":[["$","span",null,{"children":"Newer"}],"Crypto Japanese Cave: Smörgåsbord for Niverio"]}],["$","$L2",null,{"href":"/touching-slitherlink-with-blackout-tetrominos-000c3h","children":[["$","span",null,{"children":"Older"}],"Touching Slitherlink with Blackout Tetrominos"]}]]}]
+7:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

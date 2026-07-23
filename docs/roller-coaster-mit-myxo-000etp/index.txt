@@ -1,0 +1,65 @@
+1:"$Sreact.fragment"
+2:I[39756,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[37457,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+9:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+b:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+d:I[68027,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/puzzles/_next/static/chunks/0jfvsw6os8og2.css","style"]
+0:{"P":null,"c":["","roller-coaster-mit-myxo-000etp",""],"q":"","i":false,"f":[[["",{"children":[["slug","roller-coaster-mit-myxo-000etp","d",null],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/puzzles/_next/static/chunks/0jfvsw6os8og2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/puzzles/_next/static/chunks/01xlw8hd842-c.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){try{var t=localStorage.getItem('puzzle-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}})()"}}]}],["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,null]},null,false,"$@8"]},null,false,null],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],null]}],false]],"m":"$undefined","G":["$d",[["$","link","0",{"rel":"stylesheet","href":"/puzzles/_next/static/chunks/0jfvsw6os8og2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"iy9oKXeXsxpHct0uCiMnG"}
+e:[]
+8:"$We"
+f:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+10:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+11:T8b6,<p>
+
+This is a puzzle for Myxo in celebration of his birthday and his recent marriage. Congratulations, my friend!</p><p>
+</p><hr>
+
+
+<br>
+<br>
+
+Below we have a standard cryptic roller-coaster where numbers from 1 to 12 must be placed exactly once in each row and column. The letters from HAPPY BIRTHDAY MYXO are to replace the values 0-11, and to accomodate this, all clues are given in base 12. However, when making the roller coaster, I calculated many of the sums incorrectly... I treated many cells as exactly one too low. So, I thought I'd make a second puzzle to help you find which cells are wrong.
+
+<br>
+<br>
+
+The second puzzle is a slitherlink, but forgetful as I am, the puzzle is either an "Außen-knapp-daneben-Rundweg" or an "Innen-knapp-daneben-Rundweg"... I can't recall which one, but it shouldn't be too much of an issue to find out, the types are fairly different after all. Anyway, the incorrect cells for the roller coaster are exactly the same as those inside the loop here.
+<br>
+<br>
+
+That should be everything, I hope you enjoy!
+<br>
+<br>
+
+<div style="clear:both;text-align:center">
+<img src="/puzzles/000etp/asset-01-13597adbca.png" loading="lazy" decoding="async">
+</div>
+
+<div style="clear:both;text-align:center">
+<img src="/puzzles/000etp/asset-02-a60cc35623.png" loading="lazy" decoding="async">
+</div>
+<a href="https://tinyurl.com/2c7xm4q3">penpa+</a><a><p>
+</p><hr>
+Notes:</a><p><a>
+'Außen-knapp-daneben-Rundweg' means that all clues outside the loop are one too high or one too low, while all clues inside the loop are correct.
+<br>
+<br>
+'Innen-knapp-daneben-Rundweg' means that all clues inside the loop are one too high or one too low, while all clues outside the loop are correct.
+<br>
+<br>
+To clarify, the above definitions only apply to the slitherlink clues: exactly one of the above two definitions holds as they are mutually exclusive.
+<br>
+<br>
+The digits 'inside the loop' in the roller coaster grid are not exactly knapp daneben, you are to subtract 1 from each of those cells when calculating the sums. A similar interaction between grids with an example can be found </a><a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=00029Y">here</a><a>.
+<br>
+<br>
+</a></p><hr>4:[["$","header",null,{"className":"site-header","children":[["$","$Lf",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L10",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$Lf",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Roller Coaster mit Myxo"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Roller Coaster mit Myxo"}],["$","p",null,{"className":"puzzle-byline","children":"September 18, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000ETP","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$11"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"The numbers 'outside the loop' in the second to last row and the second to last column."}}],"$L12"]}]]}],"$L13"]}],"$L14"]}]]
+12:["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]
+13:["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"September 18, 2023"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Roller Coaster",{"children":"Roller Coaster"}],["$","span","Slitherlink",{"children":"Slitherlink"}]]}]]}]
+14:["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$Lf",null,{"href":"/doppelcrypto-japanese-cave-000fd7","children":[["$","span",null,{"children":"Newer"}],"Doppelcrypto Japanese Cave"]}],["$","$Lf",null,{"href":"/loop-with-a-coral-infestation-000evd","children":[["$","span",null,{"children":"Older"}],"Loop with a Coral Infestation"]}]]}]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+c:[["$","title","0",{"children":"Roller Coaster mit Myxo — Puzzles"}],["$","meta","1",{"name":"description","content":"Rules, images, and solving links for Roller Coaster mit Myxo."}]]

@@ -1,0 +1,28 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+6:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+4:T5a1,Place the numbers from 0 to 9 exactly once in every row, column, and region. Regions are orthogonally connected and must be located by the solver. Each region belongs to a team, Red or Blue, and exactly five regions are on each team.
+<br>
+<br>
+A number placed in a cell with an arrow or arrows in a region on Red Team indicates the total number of cells seen in the indicated directions combined, where region borders or the edge of the grid obstruct vision. The clue cell itself is not included in the count. A number placed in a cell with an arrow or arrows in a region on Blue Team indicates the total number of region borders that appear in the indicated directions combined.
+<br>
+<br>
+For both teams, a region border is defined exactly as when two directly sequential cells in an indicated direction do not belong to the same region. The perimeter of the grid does not count as a region border.
+<br>
+<br>
+A <a href="https://tinyurl.com/2aawrbll">6x6 example</a><a> is provided:
+<div style="clear:both;text-align:center">
+<img src="/puzzles/000hye/asset-01-e4ca0c9b2d.png" loading="lazy" decoding="async">
+</div>
+</a><p><a>
+</a><a href="https://sudokupad.app/dc75oziyuj?setting-conflictchecker=0">SudokuPad</a><a> 
+</a></p><p><a>
+</a><a href="https://tinyurl.com/2cda8oej">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000hye/asset-02-36d7814233.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Chaos Construction: Red Team / Blue Team"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Chaos Construction: Red Team / Blue Team"}],["$","p",null,{"className":"puzzle-byline","children":"May 4, 2024"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000HYE","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 7, Column 6"}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"May 4, 2024"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Sudoku",{"children":"Sudoku"}],["$","span","Chaos Construction (Variant)",{"children":"Chaos Construction (Variant)"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/chaos-construction-disconnected-1-000i3b","children":[["$","span",null,{"children":"Newer"}],"Chaos Construction: Disconnected (1)"]}],["$","$L2",null,{"href":"/chaos-construction-exclusions-000hx2","children":[["$","span",null,{"children":"Older"}],"Chaos Construction: Exclusions"]}]]}]]}]],[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

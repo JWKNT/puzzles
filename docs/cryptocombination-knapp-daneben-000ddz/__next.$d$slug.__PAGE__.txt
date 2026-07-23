@@ -1,0 +1,35 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+c:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+4:T757,Replace each letter from A to J with a unique number from 0-9, and then solve each of the four given puzzles. Each letter must have the same value across all puzzles. Every clue given is off by one, either too large or too small.
+<br>
+<br>
+Magnetic Plates: Each domino is a magnet that is either charged or uncharged. If a magnet is charged, then one half is positively charged and the other half is negatively charged. No two cells with the same charge may touch orthogonally. Clues above and to the left of the grid indicate the total number of positive and negative charges found in the row or column.
+<br>
+<br>
+Summation Slitherlink: Draw a closed loop along the edges of some cells that does not touch or cross itself. Clues above and to the right of the grid indicate the total number of edges used by each connected group of cells inside the loop in the respective row or column, in order. A question mark replaces any number from 0 to 9, and no clue may have a leading zero.
+<br>
+<br>
+Starry Sky: Place stars into some cells without arrows such that every star has at least one arrow pointing towards it, and every arrow is pointing towards at least one star. Clues to the left and below the grid indicate the total number of stars in the respective row or column.
+<br>
+<br>
+U-Bahn: Draw a totally connected loop network that travels orthogonally between the centers of cells and does not have any dead ends. Clues to the right and below the grid indicate the total number of turns, straight segments, branches, or crosses in the respective row or column.
+<br>
+<br>
+<a href="https://sudokupad.app/hqmnfwj04u?setting-conflictchecker=0">SudokuPad</a><a> 
+</a><p><a>
+</a><a href="https://tinyurl.com/28wouzc8">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000ddz/asset-01-3438a03158.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Cryptocombination Knapp Daneben"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Cryptocombination Knapp Daneben"}],["$","p",null,{"className":"puzzle-byline","children":"March 26, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000DDZ","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Enter the following four pieces of information as one string, without spaces."}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"March 26, 2023"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":["$L5","$L6","$L7","$L8"]}]]}]]}],"$L9"]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+5:["$","span","Slitherlink",{"children":"Slitherlink"}]
+6:["$","span","Underground",{"children":"Underground"}]
+7:["$","span","Sternenhimmel",{"children":"Sternenhimmel"}]
+8:["$","span","Magnets",{"children":"Magnets"}]
+9:["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/doppelganger-crypto-japanese-cave-000dgl","children":[["$","span",null,{"children":"Newer"}],"Doppelganger: Crypto Japanese Cave"]}],["$","$L2",null,{"href":"/siamese-coral-2-000d7q","children":[["$","span",null,{"children":"Older"}],"Siamese Coral (2)"]}]]}]
+a:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
+b:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
+e:null

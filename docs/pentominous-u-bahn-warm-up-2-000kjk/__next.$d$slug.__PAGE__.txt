@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+5:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+4:T487,Tessellate the entire grid besides the black cells into pentominos (orthogonally connected regions of exactly five cells) such that no two pentominos of the same shape share an edge. Rotations and reflections of a shape are counted as the same shape. A cell with a letter indicates the shape of the pentomino that contains that cell.
+<br>
+<br>
+Draw a totally connected loop network through the centers of some cells, which may branch or turn, but may not have any dead ends. A clue outside the grid indicates how many times the corresponding line shape (i.e. a cross, branch, straight line, or turn) appears in the corresponding row or column, irrespective of the line shape's rotation. The loop network may enter the black cells freely.
+<br>
+<br>
+Every pentomino must contain one turn, one straight, one branch, one cross, and one empty cell.
+<br>
+<br>
+<a href="https://sudokupad.app/aa20yje7zm?setting-conflictchecker=0">SudokuPad</a><a> 
+</a><p><a>
+</a><a href="https://tinyurl.com/2xllmrau">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000kjk/asset-01-54a888c7df.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Pentominous U-Bahn (Warm-up #2)"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Pentominous U-Bahn (Warm-up #2)"}],["$","p",null,{"className":"puzzle-byline","children":"November 15, 2024"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000KJK","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"For each row except the last, the number of lines leading down from that row"}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"November 15, 2024"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Underground",{"children":"Underground"}],["$","span","Pentominous",{"children":"Pentominous"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/pentominous-u-bahn-000knt","children":[["$","span",null,{"children":"Newer"}],"Pentominous U-Bahn"]}],["$","$L2",null,{"href":"/pentominous-u-bahn-warm-up-1-000kjj","children":[["$","span",null,{"children":"Older"}],"Pentominous U-Bahn (Warm-up #1)"]}]]}]]}]],[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+7:null

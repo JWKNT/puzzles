@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+8:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T5f5,Shade three cells in every row and column of the first diagram, and enter into every other cell a digit from 1 to 9 such that every row and column contains each digit from 1 to 9 exactly once. Clues above and to the left of the grid are tripleblock clues: the first value gives the sum of the digits between the first and second shaded cell in the row or column, likewise with the second value and the second and third shaded cell. These values may be zero if the shaded cells are adjacent.
+<br>
+<br>
+The second diagram is a standard U-Bahn. Draw a loop network through the centers of some cells, which may branch or turn, but may not have any dead ends. A clue outside the grid indicates how many times the corresponding line shape (i.e. a cross, branch, straight line, or turn) appears in the corresponding row or column, irrespective of the line shape's rotation.
+<br>
+<br>
+The third diagram indicates how often sections of the subway plan occur under numbers if the first two diagrams are superimposed. In this table, '0' references shaded cells. A similar example of how this works can be found <a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=0001C2">here</a><a>.
+<br>
+<br>
+Different letters replace different digits, same letters replace same digits. No multi-digit clue has a leading zero.
+<br>
+<br>
+</a><a href="http://tinyurl.com/yuk5vh37">penpa+</a><a> 
+
+<div style="clear:both;text-align:center">
+<img src="/puzzles/000gci/asset-01-3cc0435a00.png" loading="lazy" decoding="async">
+</div>
+</a>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"U-Bahn under Tripleblock for polar"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"U-Bahn under Tripleblock for polar"}],["$","p",null,{"className":"puzzle-byline","children":"January 1, 2024"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000GCI","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 7 of the first diagram with S for shaded cell. Then, for every column (besides the last) of the second diagram, the number of segments exiting to the right."}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"January 1, 2024"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Smashed Sums",{"children":"Smashed Sums"}],["$","span","Underground",{"children":"Underground"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/japanese-dominos-000hb2","children":[["$","span",null,{"children":"Newer"}],"Japanese Dominos"]}],"$L5"]}]]}]],["$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+5:["$","$L2",null,{"href":"/cave-stations-000g5i","children":[["$","span",null,{"children":"Older"}],"Cave / Stations"]}]
+6:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

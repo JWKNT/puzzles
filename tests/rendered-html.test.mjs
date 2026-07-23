@@ -36,7 +36,7 @@ test("server-renders the full puzzle archive", async () => {
 
 test("server-renders an individual mirrored puzzle page", async () => {
   const puzzle = puzzleData[0];
-  const response = await render(`/puzzles/${puzzle.slug}`);
+  const response = await render(`/${puzzle.slug}`);
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, new RegExp(puzzle.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));

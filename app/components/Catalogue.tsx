@@ -70,7 +70,7 @@ export function Catalogue({ puzzles }: { puzzles: PuzzleSummary[] }) {
         <div className="puzzle-grid">
           {filtered.map((puzzle) => (
             <article className="puzzle-card" key={puzzle.id}>
-              <Link className="puzzle-card-link" href={`/puzzles/${puzzle.slug}`}>
+              <Link className="puzzle-card-link" href={`/${puzzle.slug}`}>
                 <div className="puzzle-thumbnail">
                   {puzzle.thumbnail ? (
                     // eslint-disable-next-line @next/next/no-img-element

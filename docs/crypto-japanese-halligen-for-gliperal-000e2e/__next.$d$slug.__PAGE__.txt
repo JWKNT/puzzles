@@ -1,0 +1,31 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+8:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T645,Divide the grid into island cells and water cells. The water is orthogonally connected, and no 2x2 area is entirely water. Every island contains exactly one colored cell.
+<br>
+<br>
+Ships are to be placed in some water cells. A colored water cell is called a lighthouse, and ships may not touch lighthouses or other ships, even diagonally. Lighthouses may only touch other lighthouses diagonally. 
+<br>
+<br>
+Place numbers from 1 to 9 on every island cell, ship, and lighthouse such that no number repeats in a row or column, or on an island. No water cell may contain a number. Clues outside the grid indicate the sums of connected groups of numbers in the respective row or column, in order, where empty cells serve as delimeters between groups. 
+<br>
+<br>
+A number on a colored cell on an island indicates the size of the island containing that cell. A number on a lighthouse indicates the total number of ships that share a row or column with that lighthouse.
+<br>
+<br>
+Eleven of the twelve letters in outside clues replace unique numbers from 0 to 10. The letter that replaces 10 never appears in a two digit clue. The last letter replaces a different number from 0 to 9 in each occurrence. A question mark can be any number from 0 to 9, and for all clues, none may have a leading zero.
+<br>
+<br>
+<a href="https://sudokupad.app/wyq9xz0twr?setting-conflictchecker=0">SudokuPad</a><a> 
+</a><p><a>
+</a><a href="https://tinyurl.com/2afmp33u">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000e2e/asset-01-d1afdc43e5.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Crypto Japanese Halligen for Gliperal"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Crypto Japanese Halligen for Gliperal"}],["$","p",null,{"className":"puzzle-byline","children":"June 4, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000E2E","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 11, Column 11. X for empty cell, and S after each ship cell."}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"June 4, 2023"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Japanese Sums",{"children":"Japanese Sums"}],["$","span","Lighthouses",{"children":"Lighthouses"}],["$","span","Nurikabe",{"children":"Nurikabe"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/chaos-deconstruction-sightlines-000e4x","children":[["$","span",null,{"children":"Newer"}],"Chaos Deconstruction: Sightlines"]}],"$L5"]}]]}]],["$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+5:["$","$L2",null,{"href":"/extraterrestrial-tripleblock-with-x-sums-000e01","children":[["$","span",null,{"children":"Older"}],"Extraterrestrial Tripleblock with X-Sums"]}]
+6:["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

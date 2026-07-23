@@ -1,0 +1,25 @@
+1:"$Sreact.fragment"
+2:I[22016,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],""]
+3:I[2330,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js","/puzzles/_next/static/chunks/0dbdr.79mvjwj.js"],"ThemeToggle"]
+5:I[97367,["/puzzles/_next/static/chunks/01xlw8hd842-c.js","/puzzles/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+4:T587,Two corals are to be drawn in the grid: each coral is orthogonally connected, contains no 2x2 area, and does not 'lock in' any cells; that is, for each coral, all orthogonally connected groups of cells that do not belong to itself are orthogonally connected to the boundary. The corals may not have any cells in common.
+<br>
+<br>
+One of the two corals is entirely comprised of numbers from 1 to 9, and no numbers may be placed elsewhere in the grid. Numbers must not repeat in any row or column. Clues outside the grid indicate the sums of connected groups of numbers in the respective row or column, where cells not on the number-coral serve as delimeters between groups. The sums are given in ascending order, not order of appearance.
+<br>
+<br>
+Clues to the right and bottom indicate the lengths of coral segments for one of the two corals, in ascending order. Different rows and columns may provide information on different corals, but no row or column contains information mixed from both corals.
+<br>
+<br>
+A question mark can replace any number from 0 to 9, but no clue may have a leading zero.
+<br>
+<br>
+<a href="https://sudokupad.app/kcrlmo8ekh?setting-conflictchecker=0">SudokuPad</a><a> 
+</a><p><a>
+</a><a href="https://tinyurl.com/25yahodu">penpa+</a><a> 
+
+</a></p><div style="clear:both;text-align:center"><a>
+<img src="/puzzles/000d6i/asset-01-580789b4b8.png" loading="lazy" decoding="async">
+</a></div>0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header","children":[["$","$L2",null,{"className":"home-link","href":"/","children":"Puzzles"}],["$","$L3",null,{}]]}],["$","main",null,{"className":"site-main puzzle-page","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Puzzles"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"children":"Siamese Coral (1)"}]]}],["$","header",null,{"className":"puzzle-hero","children":[["$","div",null,{"children":[["$","h1",null,{"children":"Siamese Coral (1)"}],["$","p",null,{"className":"puzzle-byline","children":"March 6, 2023"}]]}],["$","a",null,{"className":"source-button","href":"https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&id=000D6I","target":"_blank","rel":"noreferrer","children":["View original on LMD ",["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],["$","div",null,{"className":"puzzle-layout","children":[["$","article",null,{"className":"puzzle-article","children":[["$","div",null,{"className":"article-label","children":"Rules & puzzle"}],["$","div",null,{"className":"puzzle-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","section",null,{"className":"solution-code","children":[["$","h2",null,{"children":"Solution code"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"Row 3, Column 9: K for empty coral, X for neither coral, otherwise the digit"}}],["$","p",null,{"className":"solution-note","children":"Submit your answer on the original Logic Masters Germany page."}]]}]]}],["$","aside",null,{"className":"puzzle-meta","aria-label":"Puzzle details","children":[["$","h2",null,{"children":"Details"}],["$","dl",null,{"children":["$","div",null,{"children":[["$","dt",null,{"children":"Published"}],["$","dd",null,{"children":"March 6, 2023"}]]}]}],["$","div",null,{"className":"tag-list","aria-label":"Puzzle tags","children":[["$","span","Japanese Sums",{"children":"Japanese Sums"}],["$","span","Coral",{"children":"Coral"}]]}]]}]]}],["$","nav",null,{"className":"puzzle-pagination","aria-label":"Adjacent puzzles","children":[["$","$L2",null,{"href":"/siamese-coral-2-000d7q","children":[["$","span",null,{"children":"Newer"}],"Siamese Coral (2)"]}],["$","$L2",null,{"href":"/crypto-japanese-cave-with-three-extraterrestrials-000d1k","children":[["$","span",null,{"children":"Older"}],"Crypto Japanese Cave with Three Extraterrestrials"]}]]}]]}]],[["$","script","script-0",{"src":"/puzzles/_next/static/chunks/0dbdr.79mvjwj.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iy9oKXeXsxpHct0uCiMnG"}
+7:null

@@ -42,6 +42,7 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="theme-color" content="#ffffff">
     <title>${escapeHtml(title)}</title>
+    <link rel="stylesheet" href="https://jwknt.github.io/site-theme/v1/base.css">
     <link rel="stylesheet" href="${assetPrefix}assets/styles.css">
   </head>
   <body class="${bodyClass}">

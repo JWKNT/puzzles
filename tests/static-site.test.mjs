@@ -4,7 +4,7 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const puzzles = JSON.parse(await readFile(new URL("../data/puzzles.json", import.meta.url), "utf8"));
-const forbidden = /next(?:\.js)?|_next|solution code|solution-code|theme-toggle|dark theme|by knt|lmd id|difficulty/i;
+const forbidden = /next(?:\.js)?|_next|solution code|solution-code|by knt|lmd id|difficulty/i;
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 test("catalogue is a plain static list", async () => {
@@ -12,6 +12,7 @@ test("catalogue is a plain static list", async () => {
   assert.match(html, /<table class="puzzle-table">/);
   assert.match(html, /data\/puzzles\.js/);
   assert.match(html, /assets\/app\.js/);
+  assert.match(html, /site-theme\/v1\/theme\.js/);
   assert.doesNotMatch(html, forbidden);
   assert.doesNotMatch(html, /<h1(?![^>]*sr-only)/i);
 });
@@ -27,6 +28,7 @@ test("all puzzle pages preserve content and remove LMD-only metadata", async () 
     const html = await readFile(pageUrl, "utf8");
     assert.ok(html.includes(escapeHtml(puzzle.title)));
     assert.match(html, /← All puzzles/);
+    assert.match(html, /site-theme\/v1\/theme\.js/);
     assert.doesNotMatch(html, forbidden);
     for (const image of puzzle.contentHtml.matchAll(/<img[^>]+src=["']\/puzzles\/([^"']+)/gi)) {
       assert.ok(html.includes(`../puzzles/${image[1]}`));

@@ -30,7 +30,10 @@ function formatDate(date) {
 }
 
 function puzzleContent(html) {
-  return html.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, "$1../puzzles/");
+  const divider = '<div class="site-divider puzzle-divider" aria-hidden="true"><img src="https://jehlp.net/site-theme/v2/marks/puzzles.png" width="28" height="28" alt=""></div>\n';
+  // One boundary before the first diagram; later examples, notes and grids stay in source order.
+  return html.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, "$1../puzzles/")
+    .replace(/<div\b[^>]*>\s*(?:<a\b[^>]*>\s*)?<img\b/i, (block) => divider + block);
 }
 
 function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" }) {
@@ -41,12 +44,19 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="theme-color" content="#ffffff">
-    <title>${escapeHtml(title)}</title>
-    <script src="/site-theme/v1/theme.js"></script>
-    <link rel="stylesheet" href="/site-theme/v1/base.css">
-    <link rel="stylesheet" href="${assetPrefix}assets/styles.css">
+    <title>${escapeHtml(title)} · jehlp.net</title>
+    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
+    <script src="https://jehlp.net/site-theme/v2/theme.js"></script>
+    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css">
+    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
+    <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
+    <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-specifics">
   </head>
-  <body class="${bodyClass}">
+  <body class="${bodyClass}" data-site-tone="ochre">
+    <header class="site-header site-header--identity">
+      <div class="site-brand"><img class="site-mark" src="https://jehlp.net/site-theme/v2/marks/puzzles.png" width="32" height="32" alt=""><a class="site-title" href="${assetPrefix || './'}">Puzzles</a></div>
+      <nav aria-label="Page settings"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" aria-pressed="false">◐</button></nav>
+    </header>
 ${body}
   </body>
 </html>
@@ -61,22 +71,21 @@ function cataloguePage() {
     body: `    <a class="skip-link" href="#puzzle-list">Skip to puzzle list</a>
     <main class="page-shell">
       <h1 class="sr-only">Puzzles</h1>
-      <section class="toolbar" aria-label="Search and sorting controls">
-        <label class="search-control" for="puzzle-search">
+      <section class="toolbar ui-toolbar" aria-label="Search and sorting controls">
+        <label class="search-control ui-field ui-field--search" for="puzzle-search">
           <span>Search</span>
           <input id="puzzle-search" type="search" autocomplete="off" placeholder="Title or puzzle type">
           <kbd>⌘K</kbd>
         </label>
-        <span class="toolbar-separator" aria-hidden="true"></span>
-        <label class="sort-control" for="sort-select">
+        <label class="sort-control ui-field" for="sort-select">
           <span>Sort</span>
-          <select id="sort-select">
+          <select id="sort-select" data-ui-select>
             <option value="newest">Newest first</option>
             <option value="oldest">Oldest first</option>
             <option value="title">A–Z</option>
           </select>
         </label>
-        <button class="filter-toggle" id="filter-toggle" type="button">Tags <span id="active-filter-count">0</span></button>
+        <button class="filter-toggle" id="filter-toggle" type="button" data-disclosure="(max-width: 780px)" aria-controls="filters" aria-expanded="false" hidden>Tags <span id="active-filter-count">0</span></button>
         <button class="text-button toolbar-reset" id="reset-filters" type="button">Reset</button>
       </section>
 
@@ -84,16 +93,16 @@ function cataloguePage() {
         <aside class="filters" id="filters" aria-label="Puzzle type filters">
           <div class="filter-heading">
             <h2>Tags</h2>
-            <button class="drawer-close" id="drawer-close" type="button" aria-label="Close tags">×</button>
+            <button class="drawer-close" type="button" data-disclosure-close="puzzle-list" aria-label="Close tags" hidden>×</button>
           </div>
           <div id="filter-groups"></div>
         </aside>
 
-        <section class="results" id="puzzle-list" aria-live="polite">
-          <p class="sr-only" id="result-status"></p>
+        <section class="results" id="puzzle-list" tabindex="-1">
+          <p class="result-status" id="result-status" role="status" aria-live="polite"></p>
           <div class="active-chips" id="active-chips" aria-label="Active filters"></div>
           <div class="puzzle-table-wrap">
-            <table class="puzzle-table">
+            <table class="puzzle-table ui-table">
               <thead>
                 <tr><th>Puzzle</th><th>Types</th><th>Published</th><th><span class="sr-only">Open</span></th></tr>
               </thead>
@@ -108,7 +117,6 @@ function cataloguePage() {
         </section>
       </section>
     </main>
-    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
     <script src="data/puzzles.js"></script>
     <script src="assets/app.js"></script>`,
   });
@@ -132,7 +140,6 @@ function puzzlePage(puzzle, index) {
     assetPrefix: "../",
     bodyClass: "detail-page",
     body: `    <main class="detail-shell">
-      <nav class="detail-nav" aria-label="Back to puzzle list"><a href="../">← All puzzles</a></nav>
       <header class="puzzle-header">
         <div>
           <h1>${escapeHtml(puzzle.title)}</h1>

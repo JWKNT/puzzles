@@ -16,9 +16,6 @@
     reset: document.querySelector("#reset-filters"),
     emptyReset: document.querySelector("#empty-reset"),
     filters: document.querySelector("#filters"),
-    filterToggle: document.querySelector("#filter-toggle"),
-    drawerClose: document.querySelector("#drawer-close"),
-    backdrop: document.querySelector("#drawer-backdrop"),
     activeFilterCount: document.querySelector("#active-filter-count"),
   };
 
@@ -118,6 +115,7 @@
     elements.status.textContent = `${current.length} puzzle${current.length === 1 ? "" : "s"} shown`;
     renderChips();
     syncUrl();
+    window.JehlpUI?.enhance(elements.sort);
   }
 
   function syncChecks() {
@@ -140,11 +138,6 @@
     elements.sort.value = "newest";
     syncChecks();
     render();
-  }
-
-  function closeFilters() {
-    elements.filters.classList.remove("is-open");
-    elements.backdrop.hidden = true;
   }
 
   function restoreState() {
@@ -171,18 +164,11 @@
   elements.sort.addEventListener("change", () => { state.sort = elements.sort.value; render(); });
   elements.reset.addEventListener("click", reset);
   elements.emptyReset.addEventListener("click", reset);
-  elements.filterToggle.addEventListener("click", () => {
-    elements.filters.classList.add("is-open");
-    elements.backdrop.hidden = false;
-  });
-  elements.drawerClose.addEventListener("click", closeFilters);
-  elements.backdrop.addEventListener("click", closeFilters);
   document.addEventListener("keydown", (event) => {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
       event.preventDefault();
       elements.search.focus();
     }
-    if (event.key === "Escape") closeFilters();
   });
 
   renderFilters();

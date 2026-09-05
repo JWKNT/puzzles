@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { puzzleContent } from "./lib/puzzle-content.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const puzzles = JSON.parse(await readFile(join(root, "data/puzzles.json"), "utf8"));
@@ -27,13 +28,6 @@ function formatDate(date) {
     day: "numeric",
     timeZone: "UTC",
   }).format(new Date(`${date}T00:00:00Z`));
-}
-
-function puzzleContent(html) {
-  const divider = '<div class="site-divider puzzle-divider" aria-hidden="true"><img src="https://jehlp.net/site-theme/v2/marks/puzzles.png" width="28" height="28" alt=""></div>\n';
-  // One boundary before the first diagram; later examples, notes and grids stay in source order.
-  return html.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, "$1../puzzles/")
-    .replace(/<div\b[^>]*>\s*(?:<a\b[^>]*>\s*)?<img\b/i, (block) => divider + block);
 }
 
 function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" }) {
@@ -149,7 +143,7 @@ function puzzlePage(puzzle, index) {
       </header>
       <div class="detail-tags" aria-label="Puzzle types">${tagMarkup(tags)}</div>
       <article class="puzzle-content">
-${puzzleContent(puzzle.contentHtml)}
+${puzzleContent(puzzle)}
       </article>
       <nav class="puzzle-pagination" aria-label="Adjacent puzzles">
         ${adjacent(newer, "Newer")}

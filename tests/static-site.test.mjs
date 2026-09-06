@@ -37,8 +37,14 @@ test("all puzzle pages preserve content and remove LMD-only metadata", async () 
     assert.match(html, /class="site-mark"[^>]*marks\/puzzles\.png/);
     assert.equal((html.match(/class="site-divider puzzle-divider"/g) || []).length, 1, puzzle.slug);
     const article = html.match(/<article class="puzzle-content">\n([\s\S]*?)\n      <\/article>/)[1];
-    const withoutDivider = article.replace(/<div class="site-divider puzzle-divider"[^>]*><img[^>]*><\/div>\n/, '');
-    assert.equal(withoutDivider, puzzle.contentHtml.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, '$1../puzzles/'), `${puzzle.slug} must preserve exact rules, diagrams, links and ordering`);
+    const withoutFrame = article
+      .replace('<div class="puzzle-sheet">\n', '')
+      .replace(/<div class="site-divider puzzle-divider"[^>]*><img[^>]*><\/div>\n/, '')
+      .replace('<div class="puzzle-sheet-body">', '')
+      .replace('</div><!-- /puzzle-sheet-body -->\n</div><!-- /puzzle-sheet -->', '')
+      .replace('<nav class="puzzle-actions" aria-label="Solve this puzzle">', '')
+      .replace('</nav><!-- /puzzle-actions -->', '');
+    assert.equal(withoutFrame, puzzle.contentHtml.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, '$1../puzzles/'), `${puzzle.slug} must preserve exact rules, diagrams, links and ordering`);
     assert.doesNotMatch(html, forbidden);
     for (const image of puzzle.contentHtml.matchAll(/<img[^>]+src=["']\/puzzles\/([^"']+)/gi)) {
       assert.ok(html.includes(`../puzzles/${image[1]}`));
@@ -101,9 +107,51 @@ test("boundary selection respects link paragraphs and fails for ambiguous new ar
   const link = '<a href="https://sudokupad.app/example">SudokuPad</a>';
   const image = '<div><img src="/puzzles/test/main.png"></div>';
   const output = puzzleContent({ slug: "fixture", contentHtml: `Rules.<p><a>\n</a>${link}</p>${image}` });
-  assert.match(output, /<\/div>\n<p><a>\n<\/a><a href=/);
+  assert.match(output, /<nav class="puzzle-actions"[^>]*><p><a>\n<\/a><a href=/);
   for (const contentHtml of [`Example:${image}`, `${link}${link}${image}`, `${link}No grid`]) {
     assert.throws(() => puzzleContent({ slug: "fixture", contentHtml }), /fixture:/);
   }
   assert.throws(() => puzzleContent({ slug: "loop-with-a-coral-infestation-000evd", contentHtml: `${link}${image}` }), /source anchor changed/);
+});
+
+test("one quiet sheet contains every main/reference diagram and a distinct ornament", () => {
+  let mainImages = 0;
+  for (const puzzle of puzzles) {
+    const html = puzzleContent(puzzle);
+    assert.equal((html.match(/<div class="puzzle-sheet">/g) || []).length, 1, puzzle.slug);
+    assert.match(html, /ornaments\/puzzle-transition\.png" width="28" height="28" alt=""/);
+    assert.doesNotMatch(html, /marks\/puzzles\.png/);
+    const sheet = html.split('<div class="puzzle-sheet-body">')[1].split('</div><!-- /puzzle-sheet-body -->')[0];
+    mainImages += (sheet.match(/<img\b/g) || []).length;
+    assert.equal(html.endsWith('</div><!-- /puzzle-sheet -->'), true);
+  }
+  assert.equal(mainImages, 129);
+});
+
+test("only leading solver-only runs become a compact action row", () => {
+  let actionRows = 0;
+  for (const puzzle of puzzles) {
+    const html = puzzleContent(puzzle);
+    const run = html.match(/<nav class="puzzle-actions"[^>]*>([\s\S]*?)<\/nav><!-- \/puzzle-actions -->/)?.[1];
+    if (!run) continue;
+    actionRows++;
+    assert.doesNotMatch(run, /<img|<br|Notes:|main puzzle:/i);
+    assert.match(run, />SudokuPad<|>penpa\+</);
+    assert.equal(run.replace(/<[^>]+>/g, '').replace(/SudokuPad|penpa\+|\s/g, ''), '', puzzle.slug);
+  }
+  assert.equal(actionRows, 124);
+  for (const slug of ['loop-with-a-coral-infestation-000evd', 'roller-coaster-mit-myxo-000etp']) {
+    const html = puzzleContent(puzzles.find(p => p.slug === slug));
+    assert.doesNotMatch(html, /class="puzzle-actions"/);
+    assert.ok(html.indexOf('asset-02-') < html.lastIndexOf('href='), `${slug}: post-grid links must stay after the grids`);
+  }
+});
+
+test("action grouping does not swallow prose or flatten later notes", () => {
+  const link = '<a href="https://sudokupad.app/example">SudokuPad</a>';
+  const image = '<div><img src="/puzzles/test/main.png"></div>';
+  const notes = '<p>Notes: <a href="https://example.com">reference</a></p>';
+  const output = puzzleContent({ slug: 'fixture', contentHtml: `Rules.<p>${link}</p>${image}${notes}` });
+  assert.match(output, /<\/nav><!-- \/puzzle-actions --><div><img/);
+  assert.ok(output.includes(notes));
 });

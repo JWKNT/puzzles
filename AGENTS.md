@@ -16,3 +16,9 @@ after complete examples. Never separate a colon-ended introduction from its imag
 The content helper uses named primary solve links with reviewed source anchors for
 exceptions. Missing/ambiguous boundaries fail the build; inspect the new article
 instead of reverting to first-image or punctuation heuristics. Preserve all text.
+
+The main unit uses one `.puzzle-sheet`, with a distinct transition ornament as its
+top edge. Keep examples outside and all main grids, notes and references inside.
+Group only a verified leading solver-only run into `.puzzle-actions`; do not move
+post-grid links or flatten arbitrary prose. Stripping generated wrappers must
+recover the exact source HTML apart from the existing local image-path rewrite.

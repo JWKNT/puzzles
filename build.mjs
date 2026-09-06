@@ -44,7 +44,7 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
-    <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-specifics">
+    <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-puzzle-sheet">
   </head>
   <body class="${bodyClass}" data-site-tone="ochre">
     <header class="site-header site-header--identity">

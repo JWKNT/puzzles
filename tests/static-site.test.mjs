@@ -8,6 +8,14 @@ const puzzles = JSON.parse(await readFile(new URL("../data/puzzles.json", import
 const forbidden = /next(?:\.js)?|_next|solution code|solution-code|by knt|lmd id|difficulty/i;
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
+test("divider ornament stays transparent across the page/sheet boundary", async () => {
+  const css = await readFile(new URL("../assets/styles.css", import.meta.url), "utf8");
+  const ornament = css.match(/\.puzzle-content \.puzzle-divider img\s*\{([^}]+)\}/)?.[1];
+  assert.ok(ornament, "the ornament must override ordinary content-image styling");
+  assert.match(ornament, /background:\s*none\s*;/);
+  assert.match(ornament, /border:\s*0\s*;/);
+});
+
 test("catalogue is a plain static list", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /<table class="puzzle-table ui-table">/);

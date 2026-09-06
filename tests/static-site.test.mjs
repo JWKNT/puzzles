@@ -8,6 +8,16 @@ const puzzles = JSON.parse(await readFile(new URL("../data/puzzles.json", import
 const forbidden = /next(?:\.js)?|_next|solution code|solution-code|by knt|lmd id|difficulty/i;
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
+test("imported no-destination anchors look like prose, not links", async () => {
+  const css = await readFile(new URL("../assets/styles.css", import.meta.url), "utf8");
+  assert.doesNotMatch(css, /\.puzzle-content a\s*\{/);
+  assert.match(css, /\.puzzle-content a\[href\]\s*\{[^}]*color:\s*var\(--blue\)/);
+  const proseAnchor = css.match(/\.puzzle-content a:not\(\[href\]\)\s*\{([^}]+)\}/)?.[1];
+  assert.ok(proseAnchor, "override shared link styling for non-link wrappers");
+  assert.match(proseAnchor, /color:\s*inherit\s*;/);
+  assert.match(proseAnchor, /text-decoration:\s*none\s*;/);
+});
+
 test("divider ornament stays transparent across the page/sheet boundary", async () => {
   const css = await readFile(new URL("../assets/styles.css", import.meta.url), "utf8");
   const ornament = css.match(/\.puzzle-content \.puzzle-divider img\s*\{([^}]+)\}/)?.[1];

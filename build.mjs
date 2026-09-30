@@ -40,7 +40,7 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <meta name="theme-color" content="#ffffff">
     <title>${escapeHtml(title)} · jehlp.net</title>
     <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
-    <script src="https://jehlp.net/site-theme/v2/theme.js?v=20260930-home2"></script>
+    <script src="https://jehlp.net/site-theme/v2/theme.js?v=20260930-home3"></script>
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20260930-home2">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>

@@ -41,7 +41,7 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <title>${escapeHtml(title)} · jehlp.net</title>
     <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
     <script src="https://jehlp.net/site-theme/v2/theme.js"></script>
-    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css">
+    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20260930-dial">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
     <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-puzzle-links">

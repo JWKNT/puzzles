@@ -112,7 +112,7 @@ function cataloguePage() {
       </section>
     </main>
     <script src="data/puzzles.js"></script>
-    <script src="assets/app.js"></script>`,
+    <script src="assets/app.js?v=20261002-filter-focus"></script>`,
   });
 }
 

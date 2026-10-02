@@ -8,6 +8,13 @@ const puzzles = JSON.parse(await readFile(new URL("../data/puzzles.json", import
 const forbidden = /next(?:\.js)?|_next|solution code|solution-code|by knt|lmd id|difficulty/i;
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
+test("coarse-pointer puzzle links and checkbox labels retain usable hit areas", async () => {
+  const css = await readFile(new URL("../assets/styles.css", import.meta.url), "utf8");
+  const coarse = css.slice(css.indexOf("@media (pointer: coarse)"), css.indexOf("@media print"));
+  assert.match(coarse, /\.row-arrow\s*\{[^}]*width:\s*2\.75rem;[^}]*height:\s*2\.75rem;/);
+  assert.match(coarse, /\.filter-option\s*\{[^}]*min-height:\s*2\.75rem;/);
+});
+
 test("imported no-destination anchors look like prose, not links", async () => {
   const css = await readFile(new URL("../assets/styles.css", import.meta.url), "utf8");
   assert.doesNotMatch(css, /\.puzzle-content a\s*\{/);

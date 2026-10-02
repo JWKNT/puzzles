@@ -120,6 +120,8 @@ button.type-tag:hover, a.type-tag:hover { border-color: var(--blue); background:
 
 @media (pointer: coarse) {
   .puzzle-actions a[href], .puzzle-sheet-body > a[href] { min-height: 2.75rem; }
+  .row-arrow { width: 2.75rem; height: 2.75rem; }
+  .filter-option { min-height: 2.75rem; align-items: center; }
 }
 
 @media print {

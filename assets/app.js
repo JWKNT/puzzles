@@ -92,7 +92,7 @@
 
   function renderChips() {
     elements.chips.innerHTML = [...state.tags]
-      .map((tag) => `<button class="chip" type="button" data-remove-tag="${escapeHtml(tag)}">${escapeHtml(tag)} ×</button>`)
+      .map((tag) => `<button class="chip" type="button" data-remove-tag="${escapeHtml(tag)}" aria-label="Remove ${escapeHtml(tag)} filter">${escapeHtml(tag)} ×</button>`)
       .join("");
     elements.activeFilterCount.textContent = String(state.tags.size);
   }
@@ -102,7 +102,7 @@
     if (state.query) params.set("q", state.query);
     if (state.sort !== "newest") params.set("sort", state.sort);
     if (state.tags.size) params.set("tag", [...state.tags].join(","));
-    history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
+    history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
   }
 
   function render() {
@@ -128,6 +128,12 @@
     state.tags.add(tag);
     syncChecks();
     render();
+    focusActiveTag(tag);
+  }
+
+  function focusActiveTag(tag) {
+    const chips = [...elements.chips.querySelectorAll("[data-remove-tag]")];
+    (chips.find((chip) => chip.dataset.removeTag === tag) || chips[0] || elements.search).focus();
   }
 
   function reset() {
@@ -138,6 +144,7 @@
     elements.sort.value = "newest";
     syncChecks();
     render();
+    elements.search.focus();
   }
 
   function restoreState() {
@@ -158,6 +165,7 @@
       state.tags.delete(removeTag);
       syncChecks();
       render();
+      focusActiveTag();
     }
   });
   elements.search.addEventListener("input", () => { state.query = elements.search.value; render(); });

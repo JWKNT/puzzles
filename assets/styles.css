@@ -2,7 +2,7 @@ body { padding-bottom: 64px; font-size: 16px; line-height: 1.55; }
 .skip-link { padding: 7px 11px; }
 .skip-link:focus { top: 12px; }
 
-.page-shell, .site-header { width: min(1200px, calc(100% - 44px)); margin-inline: auto; }
+.page-shell { width: min(1200px, calc(100% - 44px)); margin-inline: auto; }
 .page-shell { padding-top: 24px; }
 .toolbar { margin-bottom: 24px; }
 .search-control { position: relative; }
@@ -54,7 +54,7 @@ button.type-tag:hover, a.type-tag:hover { border-color: var(--blue); background:
 .empty-state p { color: var(--muted); }
 
 .detail-shell { width: min(1060px, calc(100% - 44px)); margin-inline: auto; padding-top: 28px; }
-.detail-page .site-header { width: min(1060px, calc(100% - 44px)); }
+
 .puzzle-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 0 0 12px; }
 .puzzle-header h1 { margin: 0 0 4px; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
 .puzzle-header time { color: var(--muted); font: var(--text-meta)/1.4 var(--ui, var(--serif)); }
@@ -90,7 +90,7 @@ button.type-tag:hover, a.type-tag:hover { border-color: var(--blue); background:
 .not-found { padding-top: 80px; }
 
 @media (max-width: 780px) {
-  .page-shell, .detail-shell, .site-header, .detail-page .site-header { width: min(100% - 28px, 1060px); }
+  .page-shell, .detail-shell { width: min(100% - 28px, 1060px); }
   .page-shell { padding-top: 14px; }
   .toolbar { gap: 9px; margin-bottom: 14px; }
   .search-control { order: -2; flex-basis: 100%; }

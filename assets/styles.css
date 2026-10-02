@@ -2,7 +2,7 @@ body { padding-bottom: 64px; font-size: 16px; line-height: 1.55; }
 .skip-link { padding: 7px 11px; }
 .skip-link:focus { top: 12px; }
 
-.page-shell { width: min(1200px, calc(100% - 44px)); margin-inline: auto; }
+.page-shell { width: min(74rem, calc(100% - 5rem)); /* shared header frame */ margin-inline: auto; }
 .page-shell { padding-top: 24px; }
 .toolbar { margin-bottom: 24px; }
 .search-control { position: relative; }

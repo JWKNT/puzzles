@@ -30,7 +30,7 @@ function formatDate(date) {
   }).format(new Date(`${date}T00:00:00Z`));
 }
 
-function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" }) {
+function pageShell({ title, description, canonical, assetPrefix = "", body, bodyClass = "" }) {
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -39,7 +39,8 @@ function pageShell({ title, description, assetPrefix = "", body, bodyClass = "" 
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="theme-color" content="#ffffff">
     <title>${escapeHtml(title)} · jehlp.net</title>
-    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
+${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/puzzles/${escapeHtml(canonical)}">
+` : ""}    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
     <script src="https://jehlp.net/site-theme/v2/theme.js?v=20260930-header-home"></script>
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20260930-mobile-header">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
@@ -61,6 +62,7 @@ function cataloguePage() {
   return pageShell({
     title: "Puzzles",
     description: "A searchable list of original logic puzzles.",
+    canonical: "",
     bodyClass: "catalogue-page",
     body: `    <a class="skip-link" href="#puzzle-list">Skip to puzzle list</a>
     <main class="page-shell">
@@ -131,6 +133,7 @@ function puzzlePage(puzzle, index) {
   return pageShell({
     title: `${puzzle.title} · Puzzles`,
     description: `Rules and puzzle for ${puzzle.title}.`,
+    canonical: `${puzzle.slug}/`,
     assetPrefix: "../",
     bodyClass: "detail-page",
     body: `    <main class="detail-shell">

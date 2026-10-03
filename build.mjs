@@ -42,7 +42,7 @@ function pageShell({ title, description, canonical, assetPrefix = "", body, body
 ${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/puzzles/${escapeHtml(canonical)}">
 ` : ""}    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
     <script src="https://jehlp.net/site-theme/v2/theme.js?v=20260930-header-home"></script>
-    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20260930-mobile-header">
+    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20261003-controls">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
     <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-puzzle-links">
@@ -142,7 +142,7 @@ function puzzlePage(puzzle, index) {
           <h1>${escapeHtml(puzzle.title)}</h1>
           <time datetime="${escapeHtml(puzzle.published)}">${escapeHtml(formatDate(puzzle.published))}</time>
         </div>
-        <a class="source-link" href="${escapeHtml(puzzle.sourceUrl)}" target="_blank" rel="noreferrer">Original ↗</a>
+        <a class="source-link" href="${escapeHtml(puzzle.sourceUrl)}" target="_blank" rel="noreferrer">Original <span class="ui-link-arrow" aria-hidden="true"></span></a>
       </header>
       <div class="detail-tags" aria-label="Puzzle types">${tagMarkup(tags)}</div>
       <article class="puzzle-content">

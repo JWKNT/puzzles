@@ -63,7 +63,7 @@ button.type-tag:hover, a.type-tag:hover { border-color: var(--blue); background:
 .source-link { flex: none; padding: 8px 11px; border: 1px solid var(--line-strong); color: var(--blue); font: var(--text-ui)/1.4 var(--ui, var(--serif)); text-decoration: none; }
 .source-link:hover { border-color: var(--blue); }
 .detail-tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 0 20px; border-bottom: 1px solid var(--line); }
-.puzzle-content { max-width: 80ch; margin-inline: auto; padding: 16px 0 8px; font-size: 1rem; line-height: 1.65; overflow-wrap: anywhere; }
+.puzzle-content { font-family: var(--reading, var(--serif)); max-width: 80ch; margin-inline: auto; padding: 16px 0 8px; font-size: 1rem; line-height: 1.65; overflow-wrap: anywhere; }
 .puzzle-content > :is(p,ul,ol,blockquote) { max-width: 72ch; }
 .puzzle-content a[href] { color: var(--blue); text-underline-offset: 3px; }
 /* Imported no-destination anchors can contain prose, not just empty wrappers. */

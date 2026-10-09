@@ -49,8 +49,8 @@ ${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/p
   </head>
   <body class="${bodyClass}" data-site-tone="ochre">
     <header class="site-header site-header--identity">
-      <div class="site-brand"><img class="site-mark" src="https://jehlp.net/site-theme/v2/marks/puzzles.png" width="32" height="32" alt=""><a class="site-title" href="${assetPrefix || './'}">Puzzles</a></div>
-      <nav aria-label="Page settings"><span class="site-utility-pair"><a class="site-home" href="https://jehlp.net/" aria-label="Home — jehlp.net" title="Home — jehlp.net"><span aria-hidden="true">✳</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" aria-pressed="false">◐</button></span></nav>
+      <div class="site-brand"><img class="site-mark" src="https://jehlp.net/site-theme/v2/marks/puzzles.png" width="32" height="32" alt=""><span class="site-title">Puzzles</span></div>
+      <nav aria-label="Page navigation">${assetPrefix ? `<a href="${assetPrefix}">All puzzles</a>` : ""}<span class="site-utility-pair"><a class="site-home" href="https://jehlp.net/" aria-label="Home — jehlp.net" title="Home — jehlp.net"><span aria-hidden="true">✳</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" aria-pressed="false">◐</button></span></nav>
     </header>
 ${body}
   </body>

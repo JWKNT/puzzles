@@ -56,7 +56,9 @@ test("all puzzle pages preserve content and remove LMD-only metadata", async () 
     const pageUrl = new URL(`../${puzzle.slug}/index.html`, import.meta.url);
     const html = await readFile(pageUrl, "utf8");
     assert.ok(html.includes(escapeHtml(puzzle.title)));
-    assert.match(html, /class="site-title" href="\.\.\/">Puzzles/);
+    assert.match(html, /<span class="site-title">Puzzles<\/span>/);
+    assert.match(html, /<a href="\.\.\/">All puzzles<\/a>/);
+    assert.doesNotMatch(html, /<a[^>]*class="site-title"/);
     assert.match(html, /src="https:\/\/jehlp.net\/site-theme\/v2\/theme\.js\?v=20260930-header-home"/);
     assert.match(html, /href="https:\/\/jehlp.net\/site-theme\/v2\/base\.css\?v=20261003-controls"/);
     assert.match(html, /class="site-mark"[^>]*marks\/puzzles\.png/);

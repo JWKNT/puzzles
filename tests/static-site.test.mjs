@@ -38,8 +38,8 @@ test("catalogue is a plain static list", async () => {
   assert.match(html, /<table class="puzzle-table ui-table">/);
   assert.match(html, /data\/puzzles\.js/);
   assert.match(html, /assets\/app\.js/);
-  assert.match(html, /src="https:\/\/jehlp.net\/site-theme\/v2\/theme\.js\?v=20260930-header-home"/);
-  assert.match(html, /href="https:\/\/jehlp.net\/site-theme\/v2\/base\.css\?v=20261003-controls"/);
+  assert.match(html, /src="https:\/\/jehlp.net\/site-theme\/v2\/theme\.js\?v=20261009-folio-wrenfold"/);
+  assert.match(html, /href="https:\/\/jehlp.net\/site-theme\/v2\/base\.css\?v=20261009-folio-wrenfold"/);
   assert.match(html, /<select id="sort-select" data-ui-select>/);
   assert.match(html, /data-disclosure="\(max-width: 780px\)"/);
   assert.doesNotMatch(html, forbidden);
@@ -59,8 +59,8 @@ test("all puzzle pages preserve content and remove LMD-only metadata", async () 
     assert.match(html, /<span class="site-title">Puzzles<\/span>/);
     assert.match(html, /<a href="\.\.\/">All puzzles<\/a>/);
     assert.doesNotMatch(html, /<a[^>]*class="site-title"/);
-    assert.match(html, /src="https:\/\/jehlp.net\/site-theme\/v2\/theme\.js\?v=20260930-header-home"/);
-    assert.match(html, /href="https:\/\/jehlp.net\/site-theme\/v2\/base\.css\?v=20261003-controls"/);
+    assert.match(html, /src="https:\/\/jehlp.net\/site-theme\/v2\/theme\.js\?v=20261009-folio-wrenfold"/);
+    assert.match(html, /href="https:\/\/jehlp.net\/site-theme\/v2\/base\.css\?v=20261009-folio-wrenfold"/);
     assert.match(html, /class="site-mark"[^>]*marks\/puzzles\.png/);
     assert.equal((html.match(/class="site-divider puzzle-divider"/g) || []).length, 1, puzzle.slug);
     const article = html.match(/<article class="puzzle-content">\n([\s\S]*?)\n      <\/article>/)[1];

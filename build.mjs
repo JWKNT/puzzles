@@ -41,8 +41,8 @@ function pageShell({ title, description, canonical, assetPrefix = "", body, body
     <title>${escapeHtml(title)} · jehlp.net</title>
 ${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/puzzles/${escapeHtml(canonical)}">
 ` : ""}    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
-    <script src="https://jehlp.net/site-theme/v2/theme.js?v=20260930-header-home"></script>
-    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20261003-controls">
+    <script src="https://jehlp.net/site-theme/v2/theme.js?v=20261009-folio-wrenfold"></script>
+    <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20261009-folio-wrenfold">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
     <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20260905-puzzle-links">

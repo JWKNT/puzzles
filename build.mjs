@@ -45,7 +45,7 @@ ${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/p
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20261009-reading-folio">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
     <script src="https://jehlp.net/site-theme/v2/components.js" defer></script>
-    <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20261009-reading-folio">
+    <link rel="stylesheet" href="${assetPrefix}assets/styles.css?v=20261110-sweep">
   </head>
   <body class="${bodyClass}" data-site-tone="ochre">
     <header class="site-header site-header--identity">

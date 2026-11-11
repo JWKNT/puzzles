@@ -71,7 +71,12 @@ test("all puzzle pages preserve content and remove LMD-only metadata", async () 
       .replace('</div><!-- /puzzle-sheet-body -->\n</div><!-- /puzzle-sheet -->', '')
       .replace('<nav class="puzzle-actions" aria-label="Solve this puzzle">', '')
       .replace('</nav><!-- /puzzle-actions -->', '');
-    assert.equal(withoutFrame, puzzle.contentHtml.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, '$1../puzzles/'), `${puzzle.slug} must preserve exact rules, diagrams, links and ordering`);
+    // The build names each imported diagram by its puzzle and its role. Nothing else changes.
+    const alts = [...withoutFrame.matchAll(/<img alt="([^"]*)"/g)].map(match => match[1]);
+    assert.equal(alts.length, (puzzle.contentHtml.match(/<img\b/gi) || []).length, `${puzzle.slug}: every diagram has alternative text`);
+    for (const alt of alts) assert.match(alt, /: (example|puzzle) diagram$/, puzzle.slug);
+    assert.match(alts.at(-1), /: puzzle diagram$/, `${puzzle.slug}: the last diagram belongs to the main puzzle`);
+    assert.equal(withoutFrame.replace(/<img alt="[^"]*"/g, '<img'), puzzle.contentHtml.replace(/(<img\b[^>]*\bsrc=["'])\/puzzles\//gi, '$1../puzzles/'), `${puzzle.slug} must preserve exact rules, diagrams, links and ordering`);
     assert.doesNotMatch(html, forbidden);
     for (const image of puzzle.contentHtml.matchAll(/<img[^>]+src=["']\/puzzles\/([^"']+)/gi)) {
       assert.ok(html.includes(`../puzzles/${image[1]}`));

@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -30,7 +31,42 @@ function formatDate(date) {
   }).format(new Date(`${date}T00:00:00Z`));
 }
 
-function pageShell({ title, description, canonical, assetPrefix = "", body, bodyClass = "" }) {
+// The link preview that Discord, Slack, Teams and other apps show for a shared link. A puzzle page
+// shows its main puzzle diagram; the catalogue shows the Puzzles symbol card of the site theme.
+const CARD = { src: "https://jehlp.net/site-theme/v2/cards/puzzles.png", width: 600, height: 600, alt: "The Puzzles symbol" };
+
+function previewTags(title, description, canonical, image) {
+  const url = `https://jehlp.net/puzzles/${canonical}`;
+  return [
+    ["property", "og:type", "website"],
+    ["property", "og:site_name", "jehlp.net"],
+    ["property", "og:title", title],
+    ["property", "og:description", description],
+    ["property", "og:url", url],
+    ["property", "og:image", image.src],
+    ["property", "og:image:width", image.width],
+    ["property", "og:image:height", image.height],
+    ["property", "og:image:alt", image.alt],
+    ["name", "twitter:card", image.width / image.height >= 1.3 ? "summary_large_image" : "summary"],
+  ].map(([kind, key, value]) => `    <meta ${kind}="${key}" content="${escapeHtml(value)}">\n`).join("");
+}
+
+// The main puzzle diagram: the first picture inside the puzzle sheet, with its size from the PNG header.
+function mainDiagram(puzzle, html) {
+  const src = (html.split('<div class="puzzle-sheet-body">')[1] || "").match(/<img\b[^>]*\bsrc="\.\.\/(puzzles\/[^"]+\.png)"/);
+  if (!src) return CARD;
+  const png = readFileSync(join(root, src[1]));
+  return { src: `https://jehlp.net/puzzles/${src[1]}`, width: png.readUInt32BE(16), height: png.readUInt32BE(20), alt: `${puzzle.title}: puzzle diagram` };
+}
+
+// The first sentence of the rules, for search results and link previews.
+function firstSentence(html) {
+  const text = html.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
+  const sentence = (text.match(/^.{20,200}?[.!?](?=\s|$)/) || [text])[0];
+  return sentence.length <= 200 ? sentence : sentence.slice(0, 197).replace(/\s+\S*$/, "") + "…";
+}
+
+function pageShell({ title, description, canonical, assetPrefix = "", body, bodyClass = "", image = CARD }) {
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -40,7 +76,7 @@ function pageShell({ title, description, canonical, assetPrefix = "", body, body
     <meta name="theme-color" content="#ffffff">
     <title>${escapeHtml(title)} · jehlp.net</title>
 ${canonical !== undefined ? `    <link rel="canonical" href="https://jehlp.net/puzzles/${escapeHtml(canonical)}">
-` : ""}    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
+${previewTags(title, description, canonical, image)}` : ""}    <link rel="icon" href="https://jehlp.net/site-theme/v2/favicons/puzzles.png" type="image/png">
     <script src="https://jehlp.net/site-theme/v2/theme.js?v=20261009-reading-folio"></script>
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/base.css?v=20261009-reading-folio">
     <link rel="stylesheet" href="https://jehlp.net/site-theme/v2/components.css">
@@ -130,10 +166,12 @@ function puzzlePage(puzzle, index) {
     ? `<a href="../${escapeHtml(item.slug)}/"><span>${label}</span>${escapeHtml(item.title)}</a>`
     : "<span></span>";
 
+  const content = puzzleContent(puzzle);
   return pageShell({
     title: `${puzzle.title} · Puzzles`,
-    description: `Rules and puzzle for ${puzzle.title}.`,
+    description: firstSentence(puzzle.contentHtml) || `Rules and puzzle for ${puzzle.title}.`,
     canonical: `${puzzle.slug}/`,
+    image: mainDiagram(puzzle, content),
     assetPrefix: "../",
     bodyClass: "detail-page",
     body: `    <main class="detail-shell">
@@ -146,7 +184,7 @@ function puzzlePage(puzzle, index) {
       </header>
       <div class="detail-tags" aria-label="Puzzle types">${tagMarkup(tags)}</div>
       <article class="puzzle-content">
-${puzzleContent(puzzle)}
+${content}
       </article>
       <nav class="puzzle-pagination" aria-label="Adjacent puzzles">
         ${adjacent(newer, "Newer")}
